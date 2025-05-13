@@ -28,8 +28,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Building className="h-8 w-8 text-primary" />
-          <span className="ml-2 text-xl font-bold">One Roofing Services Inc.</span>
+          <img src="./svgs/1.svg" alt="Logo" className="h-10 w-10" />
         </Link>
 
         {/* Desktop Navigation */}
