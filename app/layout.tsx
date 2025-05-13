@@ -18,9 +18,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/heroPics/4.webp",
-        width: 1200,
-        height: 630,
+        url: "https://i.imgur.com/RM0M0Wi.jpeg",
         alt: "One Roofing Services Inc. - Commercial Roofing Solutions",
       },
     ],
