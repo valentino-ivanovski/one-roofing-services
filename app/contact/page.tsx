@@ -106,7 +106,7 @@ export default function Contact() {
               <CardDescription>Fill out the form below and we'll get back to you as soon as possible</CardDescription>
             </CardHeader>
             <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form method="POST" action="https://formsubmit.co/info@roofingservices.ca" className="space-y-6">
                 <div className="grid gap-6 md:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">Full Name</Label>

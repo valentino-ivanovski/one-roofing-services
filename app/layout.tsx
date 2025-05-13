@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   title: "One Roofing Services Inc.",
   description:
     "Professional commercial roofing services including inspection, maintenance, restoration, and replacement.",
+  openGraph: {
+    title: "One Roofing Services Inc.",
+    description:
+      "Expert commercial roofing solutions for inspection, maintenance, restoration, and replacement. Trust One Roofing Services Inc. for quality and reliability.",
+    type: "website",
+    images: [
+      {
+        url: "/heroPics/4.webp",
+        width: 1200,
+        height: 630,
+        alt: "One Roofing Services Inc. - Commercial Roofing Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "One Roofing Services Inc.",
+    description:
+      "Top-tier commercial roofing services: inspections, maintenance, restoration, and replacements. Contact us today!",
+    images: ["./heroPics/1.webp"],
+  },
+  keywords: ["commercial roofing", "roof inspection", "roof maintenance", "roof restoration", "roof replacement"],
+  viewport: "width=device-width, initial-scale=1",
 }
 
 export default function RootLayout({
