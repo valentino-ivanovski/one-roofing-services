@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "One Roofing Services Inc.",
     description:
       "Top-tier commercial roofing services: inspections, maintenance, restoration, and replacements. Contact us today!",
-    images: ["/heroPics/1.webp"],
+    images: ["https://i.imgur.com/RM0M0Wi.jpeg"],
   },
   keywords: ["commercial roofing", "roof inspection", "roof maintenance", "roof restoration", "roof replacement"],
   viewport: "width=device-width, initial-scale=1",
