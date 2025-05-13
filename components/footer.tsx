@@ -1,5 +1,6 @@
 import Link from "next/link"
-import { Building, Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+import { Building, Phone, Mail, MapPin } from "lucide-react"
+import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -18,20 +19,12 @@ export default function Footer() {
             </p>
             <div className="flex space-x-4">
               <Link href="#" className="text-gray-500 hover:text-primary">
-                <Facebook className="h-5 w-5" />
+                <FaFacebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
-              </Link>
-              <Link href="#" className="text-gray-500 hover:text-primary">
-                <Instagram className="h-5 w-5" />
-                <span className="sr-only">Instagram</span>
+              <Link href="https://wa.me/14168417897" className="text-gray-500 hover:text-primary" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp className="h-5 w-5" />
+                <span className="sr-only">WhatsApp</span>
               </Link>
             </div>
           </div>
@@ -106,20 +99,16 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <Phone className="mr-3 h-5 w-5 shrink-0 text-primary" />
-                <span className="text-gray-600">(555) 123-4567</span>
+                <span className="text-gray-600">(416) 841-7897</span>
               </li>
               <li className="flex items-start">
                 <Mail className="mr-3 h-5 w-5 shrink-0 text-primary" />
-                <span className="text-gray-600">info@oneroofingservices.com</span>
+                <span className="text-gray-600">info@roofingservices.ca</span>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 shrink-0 text-primary" />
                 <span className="text-gray-600">
-                  123 Business Street
-                  <br />
-                  Suite 100
-                  <br />
-                  Anytown, ST 12345
+                  Ontario, ON
                 </span>
               </li>
             </ul>

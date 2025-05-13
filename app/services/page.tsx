@@ -77,7 +77,7 @@ export default function Services() {
                       "Inspection of flashing, seams, and penetrations",
                       "Drainage system evaluation",
                       "Interior inspection for signs of leaks or damage",
-                      "Comprehensive written report with findings and recommendations",
+                      "Complete evaluation and recommendations",
                     ].map((item, index) => (
                       <li key={index} className="flex items-start">
                         <CheckCircle className="mr-2 h-5 w-5 shrink-0 text-primary" />

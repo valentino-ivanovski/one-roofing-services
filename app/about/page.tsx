@@ -16,13 +16,13 @@ export default function About() {
       {/* Company Overview */}
       <div className="mb-16 grid gap-10 md:grid-cols-2">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
-          <Image src="/placeholder.svg?height=800&width=1200" alt="Our roofing team" fill className="object-cover" />
+          <Image src="./aboutPics/1.webp?" alt="Our roofing team" fill className="object-cover" />
         </div>
         <div className="flex flex-col justify-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-800">Our Company</h2>
           <p className="mb-4 text-gray-600">
             One Roofing Services Inc. has been providing quality roofing services to businesses throughout the region
-            for over n years. We specialize in commercial roofing solutions that are durable, cost-effective, and
+            for over 15 years. We specialize in commercial roofing solutions that are durable, cost-effective, and
             tailored to each client's specific needs.
           </p>
           <p className="mb-6 text-gray-600">
@@ -90,7 +90,7 @@ export default function About() {
             <div>
               <h3 className="mb-2 text-xl font-semibold text-gray-800">Experience</h3>
               <p className="text-gray-600">
-                With over n in the industry, we have the knowledge and expertise to handle any commercial
+                With over 15 years in the industry, we have the knowledge and expertise to handle any commercial
                 roofing project.
               </p>
             </div>

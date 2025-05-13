@@ -51,11 +51,11 @@ export default function Header() {
         <div className="hidden items-center space-x-4 lg:flex">
           <div className="flex items-center">
             <Phone className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-sm">(555) 123-4567</span>
+            <span className="text-sm">(416) 841-7897</span>
           </div>
           <div className="flex items-center">
             <Mail className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-sm">info@oneroofingservices.com</span>
+            <span className="text-sm">info@roofingservices.ca</span>
           </div>
           <Button asChild size="sm" className="bg-primary hover:bg-primary/90">
             <Link href="/contact">Get a Quote</Link>

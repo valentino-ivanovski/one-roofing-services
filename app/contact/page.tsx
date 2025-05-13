@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { FaWhatsapp } from "react-icons/fa"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ export default function Contact() {
                 <Phone className="mr-3 h-5 w-5 text-primary" />
                 <div>
                   <h3 className="font-medium">Phone</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-gray-600">(416) 841-7897</p>
                 </div>
               </div>
 
@@ -68,7 +69,7 @@ export default function Contact() {
                 <Mail className="mr-3 h-5 w-5 text-primary" />
                 <div>
                   <h3 className="font-medium">Email</h3>
-                  <p className="text-gray-600">info@premierroofing.com</p>
+                  <p className="text-gray-600">info@roofingservices.ca</p>
                 </div>
               </div>
 
@@ -77,11 +78,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">Address</h3>
                   <p className="text-gray-600">
-                    123 Business Street
-                    <br />
-                    Suite 100
-                    <br />
-                    Anytown, ST 12345
+                    Ontario, ON
                   </p>
                 </div>
               </div>
@@ -91,11 +88,9 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">Business Hours</h3>
                   <p className="text-gray-600">
-                    Monday - Friday: 8:00 AM - 5:00 PM
+                    Monday - Saturday: 7:00 AM - 5:00 PM
                     <br />
-                    Saturday: By appointment
-                    <br />
-                    Sunday: Closed
+                    Emergency Services Available 24/7
                   </p>
                 </div>
               </div>
@@ -120,7 +115,7 @@ export default function Contact() {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Smith"
+                      placeholder="Name Surname"
                       required
                     />
                   </div>
@@ -133,7 +128,7 @@ export default function Contact() {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@company.com"
+                      placeholder="your@email.com"
                       required
                     />
                   </div>
@@ -148,20 +143,14 @@ export default function Contact() {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="(555) 123-4567"
+                      placeholder="(123) 456-7890"
                     />
+                    <p className="flex items-center gap-1 text-sm text-muted-foreground">
+                      Also reach us on <span className="text-green-500">WhatsApp</span> <FaWhatsapp className="text-green-500" />
+                    </p>
+                    </div>
                   </div>
-
-                  <div className="space-y-2">
-                    <Label htmlFor="company">Company Name</Label>
-                    <Input
-                      id="company"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      placeholder="Your Company"
-                    />
-                  </div>
+                  <div>
                 </div>
 
                 <div className="space-y-2">
