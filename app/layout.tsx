@@ -33,8 +33,8 @@ export const metadata: Metadata = {
   keywords: ["commercial roofing", "roof inspection", "roof maintenance", "roof restoration", "roof replacement"],
   viewport: "width=device-width, initial-scale=1",
   icons: {
-    icon: "/svgs/icon.ico",
-    apple: "/svgs/icon.png",
+    icon: "/svgs/icon.ico?v2",
+    apple: "/svgs/icon.png?v2",
   },
 };
 
