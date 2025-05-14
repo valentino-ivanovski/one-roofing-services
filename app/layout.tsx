@@ -1,11 +1,11 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import Header from "@/components/header";
+import Footer from "@/components/footer";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "One Roofing Services Inc.",
@@ -32,12 +32,16 @@ export const metadata: Metadata = {
   },
   keywords: ["commercial roofing", "roof inspection", "roof maintenance", "roof restoration", "roof replacement"],
   viewport: "width=device-width, initial-scale=1",
-}
+  icons: {
+    icon: "/svgs/icon.ico",
+    apple: "/svgs/icon.png",
+  },
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
@@ -47,5 +51,5 @@ export default function RootLayout({
         <Footer />
       </body>
     </html>
-  )
+  );
 }
