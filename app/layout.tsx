@@ -1,6 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next"; // ✅ Import Speed Insights
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -30,7 +31,13 @@ export const metadata: Metadata = {
       "Top-tier commercial roofing services: inspections, maintenance, restoration, and replacements. Contact us today!",
     images: ["https://i.imgur.com/RM0M0Wi.jpeg"],
   },
-  keywords: ["commercial roofing", "roof inspection", "roof maintenance", "roof restoration", "roof replacement"],
+  keywords: [
+    "commercial roofing",
+    "roof inspection",
+    "roof maintenance",
+    "roof restoration",
+    "roof replacement",
+  ],
   viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/svgs/icon.ico?v2",
@@ -49,6 +56,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <SpeedInsights /> {/* ✅ Add Speed Insights here */}
       </body>
     </html>
   );
