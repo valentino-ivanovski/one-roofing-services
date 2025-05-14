@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Building, Phone, Mail, MapPin } from "lucide-react"
-import { FaWhatsapp, FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -117,8 +117,19 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t bg-gray-50 py-6">
-        <div className="container mx-auto px-4 text-center text-sm text-gray-600">
+        <div className="container mx-auto px-4 text-center text-sm text-gray-600 flex flex-col items-center gap-1 sm:flex-row sm:justify-between">
           <p>&copy; {new Date().getFullYear()} One Roofing Services Inc. All rights reserved.</p>
+          <p>
+            Website by{" "}
+            <a
+              href="https://github.com/valentino-ivanovski"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline"
+            >
+              Valentino Ivanovski <FaGithub className="inline" />
+            </a>
+          </p>
         </div>
       </div>
     </footer>
