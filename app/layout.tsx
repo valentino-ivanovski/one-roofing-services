@@ -1,7 +1,7 @@
 import type React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { SpeedInsights } from "@vercel/speed-insights/next"; // ✅ Import Speed Insights
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
@@ -56,7 +56,7 @@ export default function RootLayout({
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
-        <SpeedInsights /> {/* ✅ Add Speed Insights here */}
+        <SpeedInsights />
       </body>
     </html>
   );
