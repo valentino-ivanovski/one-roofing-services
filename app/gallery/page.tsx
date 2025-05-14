@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Play } from "lucide-react"
@@ -9,39 +9,39 @@ import { Play } from "lucide-react"
 const galleryItems = [
   // Page 1
   [
-    { id: 1, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 2, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 3, type: "video", src: "/placeholder.svg?height=600&width=800", videoSrc: "#" },
-    { id: 4, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 5, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 6, type: "video", src: "/placeholder.svg?height=600&width=800", videoSrc: "#" },
-    { id: 7, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 8, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 9, type: "image", src: "/placeholder.svg?height=600&width=800" },
+    { id: 1, type: "image", src: "/galleryPics/1.webp?height=600&width=800" },
+    { id: 2, type: "image", src: "/galleryPics/2.webp?height=600&width=800" },
+    { id: 3, type: "video", src: "/galleryPics/3.webp?height=600&width=800", videoSrc: "/galleryPics/3.mp4?height=600&width=800" },
+    { id: 4, type: "image", src: "/galleryPics/4.webp?height=600&width=800" },
+    { id: 5, type: "image", src: "/galleryPics/5.webp?height=600&width=800" },
+    { id: 6, type: "video", src: "/galleryPics/6.webp?height=600&width=800", videoSrc: "/galleryPics/6.mp4?height=600&width=800" },
+    { id: 7, type: "image", src: "/galleryPics/7.webp?height=600&width=800" },
+    { id: 8, type: "image", src: "/galleryPics/8.webp?height=600&width=800" },
+    { id: 9, type: "image", src: "/galleryPics/9.webp?height=600&width=800" },
   ],
   // Page 2
   [
-    { id: 10, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 11, type: "video", src: "/placeholder.svg?height=600&width=800", videoSrc: "#" },
-    { id: 12, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 13, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 14, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 15, type: "video", src: "/placeholder.svg?height=600&width=800", videoSrc: "#" },
-    { id: 16, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 17, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 18, type: "image", src: "/placeholder.svg?height=600&width=800" },
+    { id: 10, type: "image", src: "/galleryPics/10.webp?height=600&width=800" },
+    { id: 11, type: "video", src: "/galleryPics/11.webp?height=600&width=800", videoSrc: "/galleryPics/11.mp4?height=600&width=800" },
+    { id: 12, type: "image", src: "/galleryPics/12.webp?height=600&width=800" },
+    { id: 13, type: "image", src: "/galleryPics/13.webp?height=600&width=800" },
+    { id: 14, type: "image", src: "/galleryPics/14.webp?height=600&width=800" },
+    { id: 15, type: "video", src: "/galleryPics/15.webp?height=600&width=800", videoSrc: "/galleryPics/15.mp4?height=600&width=800" },
+    { id: 16, type: "image", src: "/galleryPics/16.webp?height=600&width=800" },
+    { id: 17, type: "image", src: "/galleryPics/17.webp?height=600&width=800" },
+    { id: 18, type: "image", src: "/galleryPics/18.webp?height=600&width=800" },
   ],
   // Page 3
   [
-    { id: 19, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 20, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 21, type: "video", src: "/placeholder.svg?height=600&width=800", videoSrc: "#" },
-    { id: 22, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 23, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 24, type: "video", src: "/placeholder.svg?height=600&width=800", videoSrc: "#" },
-    { id: 25, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 26, type: "image", src: "/placeholder.svg?height=600&width=800" },
-    { id: 27, type: "image", src: "/placeholder.svg?height=600&width=800" },
+    { id: 19, type: "image", src: "/galleryPics/19.webp?height=600&width=800" },
+    { id: 20, type: "image", src: "/galleryPics/20.webp?height=600&width=800" },
+    { id: 21, type: "video", src: "/galleryPics/21.webp?height=600&width=800", videoSrc: "/galleryPics/21.mp4?height=600&width=800" },
+    { id: 22, type: "image", src: "/galleryPics/22.webp?height=600&width=800" },
+    { id: 23, type: "image", src: "/galleryPics/23.webp?height=600&width=800" },
+    { id: 24, type: "video", src: "/galleryPics/24.webp?height=600&width=800", videoSrc: "/galleryPics/24.mp4?height=600&width=800" },
+    { id: 25, type: "image", src: "/galleryPics/25.webp?height=600&width=800" },
+    { id: 26, type: "image", src: "/galleryPics/26.webp?height=600&width=800" },
+    { id: 27, type: "image", src: "/galleryPics/27.webp?height=600&width=800" },
   ],
 ]
 
@@ -53,6 +53,50 @@ export default function Gallery() {
     src: string
     videoSrc?: string
   }>(null)
+
+  const touchStartXRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedItem) {
+        const flatGallery = galleryItems.flat();
+        const currentIndex = flatGallery.findIndex(i => i.id === selectedItem.id);
+        if (e.key === 'ArrowLeft') {
+          const prevIndex = (currentIndex - 1 + flatGallery.length) % flatGallery.length;
+          setSelectedItem(flatGallery[prevIndex]);
+        } else if (e.key === 'ArrowRight') {
+          const nextIndex = (currentIndex + 1) % flatGallery.length;
+          setSelectedItem(flatGallery[nextIndex]);
+        } else if (e.key === 'Escape') {
+          closeLightbox();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedItem]);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartXRef.current = e.touches[0].clientX;
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (touchStartXRef.current === null) return;
+    const touchMoveX = e.touches[0].clientX;
+    const diff = touchStartXRef.current - touchMoveX;
+
+    if (Math.abs(diff) > 50) {
+      const flatGallery = galleryItems.flat();
+      const currentIndex = flatGallery.findIndex(i => i.id === selectedItem?.id);
+      const newIndex = diff > 0
+        ? (currentIndex + 1) % flatGallery.length
+        : (currentIndex - 1 + flatGallery.length) % flatGallery.length;
+      setSelectedItem(flatGallery[newIndex]);
+      touchStartXRef.current = null;
+    }
+  };
+
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page)
@@ -81,7 +125,7 @@ export default function Gallery() {
         {galleryItems[currentPage].map((item) => (
           <div
             key={item.id}
-            className="group relative h-64 cursor-pointer overflow-hidden rounded-lg bg-white shadow-md transition-all hover:shadow-lg"
+            className="group relative h-64 cursor-pointer overflow-hidden rounded-sm bg-white shadow-md transition-all hover:shadow-lg"
             onClick={() => openLightbox(item)}
           >
             <Image
@@ -139,7 +183,11 @@ export default function Gallery() {
 
       {/* Lightbox */}
       {selectedItem && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4" onClick={closeLightbox}>
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4"
+          onClick={closeLightbox}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}>
           <div className="relative max-h-[90vh] max-w-[90vw]" onClick={(e) => e.stopPropagation()}>
             {selectedItem.type === "image" ? (
               <Image
@@ -152,13 +200,11 @@ export default function Gallery() {
             ) : (
               <div className="relative aspect-video h-auto w-full max-w-4xl">
                 <div className="flex h-full w-full items-center justify-center rounded-lg bg-black">
-                  <p className="text-white">Video would play here</p>
-                  {/* In a real implementation, you would use the video element */}
-                  {/* <video 
+                  <video 
                     src={selectedItem.videoSrc} 
                     controls 
                     className="h-full w-full rounded-lg"
-                  /> */}
+                  />
                 </div>
               </div>
             )}
