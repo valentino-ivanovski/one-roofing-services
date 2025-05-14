@@ -106,7 +106,7 @@ export default function Gallery() {
         <div className="flex gap-2">
           <Button
             variant="outline"
-            className="border-gray-300 text-gray-700 hover:bg-gray-100"
+            className="border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-700"
             disabled={currentPage === 0}
             onClick={() => handlePageChange(currentPage - 1)}
           >
@@ -119,7 +119,7 @@ export default function Gallery() {
               className={
                 currentPage === index
                   ? "border-primary bg-primary text-white hover:bg-primary/90"
-                  : "border-gray-300 text-gray-700 hover:bg-gray-100"
+                  : "border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-700"
               }
               onClick={() => handlePageChange(index)}
             >
@@ -128,7 +128,7 @@ export default function Gallery() {
           ))}
           <Button
             variant="outline"
-            className="border-gray-300 text-gray-700 hover:bg-gray-100"
+            className="border-gray-300 text-gray-700 hover:bg-gray-100 hover:text-gray-700"
             disabled={currentPage === galleryItems.length - 1}
             onClick={() => handlePageChange(currentPage + 1)}
           >

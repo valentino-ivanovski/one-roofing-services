@@ -39,8 +39,8 @@ export default function Home() {
         ))}
         
         <div className="absolute inset-0 bg-black/40" />
-        <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-4 text-white">
-          <h1 className="mb-4 max-w-2xl text-4xl font-bold leading-tight md:text-5xl">
+        <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-10 text-white">
+          <h1 className="mb-4 max-w-3xl text-4xl font-bold leading-tight md:text-5xl">
             Professional Commercial Roofing Solutions
           </h1>
           <p className="mb-6 max-w-xl text-lg">
@@ -65,7 +65,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
+          <div className="mb-9 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-800">Our Services</h2>
             <p className="mx-auto max-w-2xl text-gray-600">
               We provide comprehensive commercial roofing solutions to meet your business needs.
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 text-center">
-            <Button asChild className="bg-primary hover:bg-primary/90">
+            <Button asChild className="bg-primary hover:bg-primary/85 transition-color duration-200">
               <Link href="/services">Learn More About Our Services</Link>
             </Button>
           </div>
@@ -168,13 +168,13 @@ export default function Home() {
       {/* Featured Projects Preview */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="mb-12 text-center">
+          <div className="mb-8 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-800">Featured Projects</h2>
             <p className="mx-auto max-w-2xl text-gray-600">A sample of our recent commercial roofing work.</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-sm">
               <Image
                 src="./featuredPics/1.webp?height=600&width=800"
                 alt="Commercial roof project"
@@ -183,7 +183,7 @@ export default function Home() {
                 className="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-sm">
               <Image
                 src="./featuredPics/2.webp?height=600&width=800"
                 alt="Commercial roof project"
@@ -192,7 +192,7 @@ export default function Home() {
                 className="h-64 w-full object-cover transition-transform duration-300 hover:scale-105"
               />
             </div>
-            <div className="overflow-hidden rounded-lg">
+            <div className="overflow-hidden rounded-sm">
               <Image
                 src="./featuredPics/3.webp?height=600&width=800"
                 alt="Commercial roof project"
@@ -204,7 +204,7 @@ export default function Home() {
           </div>
 
           <div className="mt-10 text-center">
-            <Button asChild className="bg-primary hover:bg-primary/90">
+            <Button asChild className="bg-primary hover:bg-primary/85 transition-color duration-200">
               <Link href="/gallery">View All Projects</Link>
             </Button>
           </div>
@@ -337,17 +337,28 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-primary py-16 text-white">
-        <div className="container mx-auto px-4 text-center">
+      <section className="relative py-16 text-white">
+        {/* Black background */}
+        <div className="absolute inset-0 bg-black" />
+        {/* Background image with 50% opacity */}
+        <Image
+          src="/heroPics/1.webp"
+          alt="Roofing background"
+          fill
+          style={{ opacity: 0.3 }}
+          className="object-cover opacity-50"
+          priority
+        />
+        <div className="container relative z-10 mx-auto px-4 text-center">
           <h2 className="mb-6 text-3xl font-bold">Ready to discuss your roofing project?</h2>
           <p className="mx-auto mb-8 max-w-2xl text-lg">Contact us today for a consultation and free estimate.</p>
           <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+        asChild
+        size="lg"
+        variant="outline"
+        className="border-white bg-transparent text-white hover:bg-white hover:text-primary transition-color duration-300"
           >
-            <Link href="/contact">Contact Us</Link>
+        <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
       </section>

@@ -43,7 +43,7 @@ export default function Services() {
         </div>
         <div className="relative h-[400px] overflow-hidden rounded-lg">
           <Image
-            src="/placeholder.svg?height=800&width=1200"
+            src="/servicesPics/0.webp?height=800&width=1200"
             alt="Commercial roofing services"
             fill
             className="object-cover"
@@ -89,7 +89,7 @@ export default function Services() {
               </Card>
             </div>
             <div className="relative h-[300px] overflow-hidden rounded-lg md:h-auto md:order-2">
-              <Image src="/placeholder.svg?height=600&width=800" alt="Roof inspection" fill className="object-cover" />
+              <Image src="/servicesPics/1.webp?v2&height=600&width=800" alt="Roof inspection" fill className="object-cover" />
             </div>
           </div>
 
@@ -97,14 +97,14 @@ export default function Services() {
           <div className="grid gap-8 md:grid-cols-2">
             <div className="relative h-[300px] overflow-hidden rounded-lg md:h-auto">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/servicesPics/2.webp?v2&height=600&width=800"
                 alt="Roof maintenance and repair"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <Card>
+              <Card className="p-0">
                 <CardHeader>
                   <Tool className="mb-2 h-10 w-10 text-primary" />
                   <CardTitle>Maintenance & Repair</CardTitle>
@@ -168,14 +168,14 @@ export default function Services() {
               </Card>
             </div>
             <div className="relative h-[300px] overflow-hidden rounded-lg md:h-auto md:order-2">
-              <Image src="/placeholder.svg?height=600&width=800" alt="Roof restoration" fill className="object-cover" />
+              <Image src="/servicesPics/3.webp?height=600&width=800" alt="Roof restoration" fill className="object-cover" />
             </div>
           </div>
 
           {/* Roof Replacement */}
           <div className="grid gap-8 md:grid-cols-2">
             <div className="relative h-[300px] overflow-hidden rounded-lg md:h-auto">
-              <Image src="/placeholder.svg?height=600&width=800" alt="Roof replacement" fill className="object-cover" />
+              <Image src="/servicesPics/4.webp?v2" alt="Roof replacement" fill className="object-cover" />
             </div>
             <div>
               <Card>
@@ -212,19 +212,29 @@ export default function Services() {
       </div>
 
       {/* CTA Section */}
-      <div className="rounded-lg bg-primary p-8 text-center text-white md:p-12">
-        <h2 className="mb-4 text-3xl font-bold">Ready to discuss your roofing needs?</h2>
-        <p className="mx-auto mb-6 max-w-2xl text-lg">
-          Contact us today for a consultation and free estimate on your commercial roofing project.
-        </p>
-        <Button
-          asChild
-          size="lg"
-          variant="outline"
-          className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
-        >
-          <Link href="/contact">Contact Us</Link>
-        </Button>
+      <div className="relative bg-primary p-8 text-center rounded-lg overflow-hidden">
+        <Image
+          src="/heroPics/1.webp"
+          alt="Roofing background"
+          fill
+          style={{ opacity: 0.3 }}
+          className="object-cover"
+          priority
+        />
+        <div className="relative z-10 flex flex-col items-center justify-center px-4 py-16 md:p-12">
+          <h2 className="mb-4 text-3xl font-bold text-white">Ready to discuss your roofing needs?</h2>
+          <p className="mx-auto mb-6 max-w-2xl text-lg text-white">
+        Contact us today for a consultation and free estimate on your commercial roofing project.
+          </p>
+          <Button
+        asChild
+        size="lg"
+        variant="outline"
+        className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+          >
+        <Link href="/contact">Contact Us</Link>
+          </Button>
+        </div>
       </div>
     </div>
   )

@@ -54,7 +54,9 @@ export default function Header() {
           </div>
           <div className="flex items-center">
             <Mail className="mr-2 h-4 w-4 text-primary" />
-            <span className="text-sm">info@roofingservices.ca</span>
+            <a href="mailto:info@roofingservices.ca" className="text-sm hover:underline">
+              info@roofingservices.ca
+            </a>
           </div>
           <Button asChild size="sm" className="bg-primary hover:bg-primary/90">
             <Link href="/contact">Get a Quote</Link>
@@ -73,13 +75,8 @@ export default function Header() {
             <div className="flex flex-col">
               <div className="flex items-center justify-between">
                 <Link href="/" className="flex items-center" onClick={() => setIsMenuOpen(false)}>
-                  <Building className="h-6 w-6 text-primary" />
-                  <span className="ml-2 text-lg font-bold">One Roofing Services Inc.</span>
+                    <img src="/svgs/1.svg" alt="Logo" className="ml-2 h-8 w-8" />
                 </Link>
-                <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
-                  <X className="h-5 w-5" />
-                  <span className="sr-only">Close</span>
-                </Button>
               </div>
 
               <nav className="mt-8 flex flex-col space-y-4">
@@ -100,13 +97,13 @@ export default function Header() {
               <div className="mt-8 space-y-4 border-t pt-6">
                 <div className="flex items-center">
                   <Phone className="mr-3 h-5 w-5 text-primary" />
-                  <span>(555) 123-4567</span>
+                  <span>(416) 841-7897</span>
                 </div>
                 <div className="flex items-center">
                   <Mail className="mr-3 h-5 w-5 text-primary" />
-                  <span>info@oneroofingservices.com</span>
+                  <span>info@roofingservices.ca</span>
                 </div>
-                <Button asChild className="w-full bg-primary hover:bg-primary/90">
+                <Button asChild className="w-full bg-primary hover:bg-primary/85 transition-color duration-300">
                   <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                     Get a Quote
                   </Link>

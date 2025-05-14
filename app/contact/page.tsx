@@ -54,7 +54,7 @@ export default function Contact() {
           <Card>
             <CardHeader>
               <CardTitle>Contact Information</CardTitle>
-              <CardDescription>Reach out to us through any of these channels</CardDescription>
+              <CardDescription>If you'd like to reach us manually</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="flex items-start">
@@ -78,7 +78,7 @@ export default function Contact() {
                 <div>
                   <h3 className="font-medium">Address</h3>
                   <p className="text-gray-600">
-                    Ontario, ON
+                    Toronto, ON
                   </p>
                 </div>
               </div>

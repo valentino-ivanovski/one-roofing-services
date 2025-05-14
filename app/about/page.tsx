@@ -16,7 +16,7 @@ export default function About() {
       {/* Company Overview */}
       <div className="mb-16 grid gap-10 md:grid-cols-2">
         <div className="relative h-[400px] overflow-hidden rounded-lg">
-          <Image src="./aboutPics/1.webp?" alt="Our roofing team" fill className="object-cover" />
+          <Image src="./aboutPics/1.webp?v4" alt="Our roofing team" fill className="object-cover" />
         </div>
         <div className="flex flex-col justify-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-800">Our Company</h2>
@@ -130,19 +130,31 @@ export default function About() {
       </div>
 
       {/* CTA Section */}
-      <div className="rounded-lg bg-primary p-8 text-center text-white md:p-12">
-        <h2 className="mb-4 text-3xl font-bold">Ready to work with us?</h2>
-        <p className="mx-auto mb-6 max-w-2xl text-lg">
-          Contact our team today to discuss your commercial roofing project.
-        </p>
-        <Button
-          asChild
-          size="lg"
-          variant="outline"
-          className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
-        >
-          <Link href="/contact">Contact Us</Link>
-        </Button>
+      <div className="relative rounded-lg bg-primary text-center text-white md:p-12 p-8 overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+        src="/heroPics/1.webp"
+        alt="Roofing background"
+        fill
+        style={{ opacity: 0.3 }}
+        className="object-cover"
+        priority
+          />
+        </div>
+        <div className="relative z-10">
+          <h2 className="mb-4 text-3xl font-bold">Ready to work with us?</h2>
+          <p className="mx-auto mb-6 max-w-2xl text-lg">
+        Contact our team today to discuss your commercial roofing project.
+          </p>
+          <Button
+        asChild
+        size="lg"
+        variant="outline"
+        className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+          >
+        <Link href="/contact">Contact Us</Link>
+          </Button>
+        </div>
       </div>
     </div>
   )
