@@ -103,7 +103,7 @@ export default function Header() {
                   <Mail className="mr-3 h-5 w-5 text-primary" />
                   <span>info@roofingservices.ca</span>
                 </div>
-                <Button asChild className="w-full bg-primary hover:bg-primary/85 transition-color duration-300">
+                <Button asChild className="w-full bg-primary hover:bg-primary/85 transition-color duration-200">
                   <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
                     Get a Quote
                   </Link>
