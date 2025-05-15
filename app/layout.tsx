@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "One Roofing Services Inc.",
   description:
-    "Professional commercial roofing services including inspection, maintenance, restoration, and replacement.",
+    "One Roofing Services Inc. provides top-tier commercial roofing solutions tailored to meet the needs of businesses across various industries. Our expert team specializes in comprehensive roof inspections, proactive maintenance programs, high-quality roof restoration, and durable roof replacement services. With a commitment to excellence, we ensure your commercial property is protected with reliable, long-lasting roofing systems. Trust One Roofing Services Inc. for unparalleled craftsmanship, attention to detail, and exceptional customer service. Contact us today to safeguard your investment with our professional roofing expertise.",
   openGraph: {
     title: "One Roofing Services Inc.",
     description:
