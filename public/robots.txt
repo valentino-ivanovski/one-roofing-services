@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://one-roofing.vercel.app
+
+# Sitemaps
+Sitemap: https://one-roofing.vercel.app/sitemap.xml
