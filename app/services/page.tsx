@@ -10,7 +10,7 @@ export default function Services() {
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold text-gray-800">Our Services</h1>
         <p className="mx-auto max-w-2xl text-gray-600">
-          We provide comprehensive commercial roofing solutions tailored to your specific needs.
+          We provide comprehensive roofing solutions to meet your business needs.
         </p>
       </div>
 

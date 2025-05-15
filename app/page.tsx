@@ -39,13 +39,13 @@ export default function Home() {
         ))}
         
         <div className="absolute inset-0 bg-black/40" />
-        <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-10 text-white">
+        <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-16 text-white">
           <h1 className="mb-4 max-w-3xl text-4xl font-bold leading-tight md:text-5xl">
-            Professional Commercial Roofing Solutions
+            Professional Roofing<br></br> Solutions
           </h1>
-          <p className="mb-6 max-w-xl text-lg">
-            Providing quality commercial roofing services with a focus on durability and customer satisfaction.
-          </p>
+            <p className="mb-6 max-w-xl text-lg">
+            Providing quality <strong>commercial</strong>, <strong>industrial</strong> and <strong>residential</strong> roofing services with a focus on durability.
+            </p>
           <div className="flex flex-wrap gap-4">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
               <Link href="/contact">Contact Us</Link>
@@ -268,7 +268,7 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">Sarah Thompson</h3>
+                  <h3 className="text-lg font-semibold">Sarah May</h3>
                   <p className="text-sm text-gray-600">Office Building Owner</p>
                 </div>
               </div>

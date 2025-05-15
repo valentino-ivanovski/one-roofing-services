@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Company Info */}
           <div>
             <div className="mb-0 flex items-center">
-              <img src="/svgs/1.svg" alt="One Roofing Services Logo" className="h-8 w-8" />
+              <img src="/svgs/1.svg?v2" alt="One Roofing Services Logo" className="h-11 w-11" />
             </div>
             <p className="mb-4 mt-1 text-gray-600">
               Professional commercial roofing services with a focus on quality and customer satisfaction.
@@ -108,9 +108,16 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 shrink-0 text-primary" />
-                <span className="text-gray-600">
-                  Toronto, ON
-                </span>
+                <a
+                  href="https://www.google.com/maps/place/8551+Weston+Rd+suite+202,+Vaughan,+ON+L4L+9R4,+Canada/@43.8094732,-79.5538746,17z/data=!3m2!4b1!5s0x882b2f79ad3ea00d:0x28346da1192d4aea!4m6!3m5!1s0x882b2f79ad6aaaab:0xcc711428e453e54d!8m2!3d43.8094732!4d-79.5512997!16s%2Fg%2F11kj_c26qt?entry=ttu&g_ep=EgoyMDI1MDUxMi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 hover:underline"
+                >
+                  202-8551 Weston Rd<br />
+                  Woodbridge ON L4L 9R4<br />
+                  Canada
+                </a>
               </li>
             </ul>
           </div>

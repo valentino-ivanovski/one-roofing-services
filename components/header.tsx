@@ -5,7 +5,7 @@ import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { Building, Menu, Phone, Mail, X } from "lucide-react"
+import { Building, Menu, Phone, Mail, X, MapPin } from "lucide-react"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -28,7 +28,7 @@ export default function Header() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <img src="./svgs/1.svg" alt="Logo" className="h-10 w-10" />
+          <img src="./svgs/1.svg?v4" alt="Logo" className="h-11 w-11" />
         </Link>
 
         {/* Desktop Navigation */}
@@ -75,7 +75,7 @@ export default function Header() {
             <div className="flex flex-col">
               <div className="flex items-center justify-between">
                 <Link href="/" className="flex items-center" onClick={() => setIsMenuOpen(false)}>
-                    <img src="/svgs/1.svg" alt="Logo" className="ml-2 h-8 w-8" />
+                    <img src="/svgs/1.svg?v2" alt="Logo" className="ml-2 h-11 w-11" />
                 </Link>
               </div>
 
@@ -101,7 +101,9 @@ export default function Header() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="mr-3 h-5 w-5 text-primary" />
-                  <span>info@roofingservices.ca</span>
+                    <a href="mailto:info@roofingservices.ca" className="text-gray-600 hover:underline">
+                    info@roofingservices.ca
+                    </a>
                 </div>
                 <Button asChild className="w-full bg-primary hover:bg-primary/85 transition-color duration-200">
                   <Link href="/contact" onClick={() => setIsMenuOpen(false)}>
