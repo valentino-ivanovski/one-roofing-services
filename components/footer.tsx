@@ -102,7 +102,9 @@ export default function Footer() {
               </li>
               <li className="flex items-start">
                 <Mail className="mr-3 h-5 w-5 shrink-0 text-primary" />
-                <span className="text-gray-600">info@roofingservices.ca</span>
+                <a href="mailto:info@roofingservices.ca" className="text-gray-600 hover:underline">
+                  info@roofingservices.ca
+                </a>
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 h-5 w-5 shrink-0 text-primary" />
