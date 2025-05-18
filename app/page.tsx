@@ -4,8 +4,12 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { PencilRulerIcon as Shield, Hammer as Tool, WarehouseIcon as Wrench, Repeat as Building2 } from "lucide-react"
+import { PencilRulerIcon as Shield, Hammer as Tool, WarehouseIcon as Wrench, Repeat as Building2, Check } from "lucide-react"
 import { useEffect, useState } from "react"
+import Logo1 from "@/public/logos/1.svg";
+import Logo2 from "@/public/logos/2.png";
+import Logo3 from "@/public/logos/3.png";
+import Logo4 from "@/public/logos/4.svg";
 
 export default function Home() {
 
@@ -39,26 +43,83 @@ export default function Home() {
         ))}
         
         <div className="absolute inset-0 bg-black/40" />
-        <div className="container relative z-10 mx-auto flex h-full flex-col items-start justify-center px-16 text-white">
+        <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-4 text-white sm:px-16 sm:items-start sm:text-left text-center items-center">
           <h1 className="mb-4 max-w-3xl text-4xl font-bold leading-tight md:text-5xl">
-            Professional Roofing<br></br> Solutions
+            One Roofing<br></br> Services
           </h1>
             <p className="mb-6 max-w-xl text-lg">
-            Providing quality <strong>commercial</strong>, <strong>industrial</strong> and <strong>residential</strong> roofing services with a focus on durability.
+              Ready to roof whatever you need.
             </p>
-          <div className="flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <Link href="/contact">Contact Us</Link>
-            </Button>
+            <ul className="mb-6 font-bold text-yellow-200 grid grid-cols-2 gap-x-0 gap-y-1 sm:ml-0 ml-3 text-lg">
+              <li className="flex items-center whitespace-nowrap">
+                <Check className="inline-block h-5 w-5 mr-2 shrink-0" />
+                <span className="hidden sm:inline">Certified contractor</span>
+                <span className="inline sm:hidden">Certif. contractor</span>
+              </li>
+              <li className="flex items-center transform translate-x-6">
+                <Check className="inline-block  h-5 w-5 mr-2" />
+                WSIB
+              </li>
+              <li className="flex items-center">
+                <Check className="inline-block h-5 w-5 mr-2" />
+                Est. in 2009
+              </li>
+              <li className="flex items-center sm:transform sm:-translate-x-0 sm:transform sm:-translate-x-10">
+                <Check className="inline-block h-5 w-5 mr-2" />
+                Fully insured
+              </li>
+            </ul>
+          <div className="flex flex-wrap gap-5">
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="text-black hover:bg-white/90 hover:text-black"
+              className="text-black px-5 rounded-sm hover:bg-white/90"
             >
               <Link href="/gallery">View Our Work</Link>
             </Button>
+            <Button asChild size="lg" className="bg-primary rounded-sm hover:bg-primary/90">
+              <Link href="/contact">Contact Us</Link>
+            </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Logos Section */}
+      <section className="bg-gray-50 py-16 flex flex-row items-center justify-center">
+        <div className="grid grid-cols-2 sm:pr-5 sm:pl-3 pr-9 pl-3 gap-8 sm:flex sm:flex-wrap sm:gap-14 sm:justify-center sm:items-center">
+          <a
+            href="https://www.one-roofing.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity duration-200 hover:opacity-70"
+          >
+            <Image src={Logo1} alt="Logo 1" width={180} height={90} className="h-20 w-auto object-contain mx-auto" />
+          </a>
+          <a
+            href="https://www.soprema.ca/en/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity duration-200 hover:opacity-70"
+          >
+            <Image src={Logo2} alt="Logo 2" width={180} height={90} className="h-20 w-auto object-contain mx-auto" />
+          </a>
+          <a
+            href="https://iibec.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity duration-200 hover:opacity-70"
+          >
+            <Image src={Logo3} alt="Logo 3" width={260} height={260} className="h-36 w-28 object-contain mx-auto" />
+          </a>
+          <a
+            href="https://www.wsib.ca/en"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-opacity duration-200 hover:opacity-70 sm:transform sm:translate-y-0 transform translate-y-8"
+          >
+            <Image src={Logo4} alt="Logo 4" width={180} height={90} className="h-20 w-auto object-contain mx-auto" />
+          </a>
         </div>
       </section>
 
