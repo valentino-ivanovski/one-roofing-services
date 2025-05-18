@@ -89,7 +89,7 @@ export default function Home() {
       <section className="bg-gray-50 py-10 sm:py-5 flex items-center justify-center">
         <div className="grid grid-cols-4 gap-3 sm:flex sm:flex-nowrap sm:gap-14 sm:justify-center sm:items-center justify-center items-center pr-6 pl-4 w-full max-w-4xl">
           <a
-            href="https://www.one-roofing.vercel.app/"
+            href="https://one-roofing.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-opacity duration-200 hover:opacity-70 flex justify-center"
