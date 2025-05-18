@@ -50,7 +50,7 @@ export default function Home() {
             <p className="mb-6 max-w-xl text-lg">
               Ready to roof whatever you need.
             </p>
-            <ul className="mb-6 font-bold text-yellow-300 sm:flex sm:flex-row grid grid-cols-2 gap-x-0 sm:gap-x-6 gap-y-1 text-lg">
+            <ul className="mb-6 font-bold text-yellow-300 sm:flex sm:flex-row grid grid-cols-2 gap-x-0 transform translate-x-5 sm:transform sm:translate-x-0 sm:gap-x-6 gap-y-1 text-lg">
               <li className="flex items-center whitespace-nowrap">
                 <Check className="inline-block h-5 w-5 mr-2 shrink-0" />
                 <span className="hidden sm:inline">Certified contractor</span>
