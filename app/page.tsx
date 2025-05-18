@@ -74,7 +74,7 @@ export default function Home() {
               asChild
               variant="outline"
               size="lg"
-              className="text-black px-5 rounded-sm hover:bg-white/90"
+              className="text-black px-5 rounded-sm hover:bg-white/90 hover:text-black"
             >
               <Link href="/gallery">View Our Work</Link>
             </Button>
