@@ -45,7 +45,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/40" />
         <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-4 text-white sm:px-16 text-center items-center">
           <h1 className="mb-4 max-w-3xl text-4xl font-bold leading-tight md:text-5xl">
-            One Roofing Services
+            ONE ROOFING SERVICES
           </h1>
             <p className="mb-6 max-w-xl text-lg">
               Ready to roof whatever you need.
