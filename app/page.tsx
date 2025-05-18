@@ -131,12 +131,14 @@ export default function Home() {
             <p className="mx-auto max-w-2xl text-gray-600">
               Whether you're installing a new system, restoring an existing one, or maintaining your current roof, we provide expert guidance and high-quality workmanship every <br></br> step of the way.
             </p>
+            {/* 
             <ul className="mx-auto font-semibold mt-6 max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-left list-disc list-inside text-gray-700 text-base sm:transform sm:translate-x-10 transform translate-x-6">
               <li>Built-Up Roofing (BUR)</li>
               <li>Modified Bitumen</li>
               <li>Single Ply Systems (TPO, PVC, & EPDM)</li>
               <li>Liquid-Applied Membranes</li>
             </ul>
+            */}
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
