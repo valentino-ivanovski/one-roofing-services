@@ -43,28 +43,28 @@ export default function Home() {
         ))}
         
         <div className="absolute inset-0 bg-black/40" />
-        <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-4 text-white sm:px-16 sm:items-start sm:text-left text-center items-center">
+        <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-4 text-white sm:px-16 text-center items-center">
           <h1 className="mb-4 max-w-3xl text-4xl font-bold leading-tight md:text-5xl">
-            One Roofing<br></br> Services
+            One Roofing Services
           </h1>
             <p className="mb-6 max-w-xl text-lg">
               Ready to roof whatever you need.
             </p>
-            <ul className="mb-6 font-bold text-yellow-200 grid grid-cols-2 gap-x-0 gap-y-1 sm:ml-0 ml-3 text-lg">
+            <ul className="mb-6 font-bold text-yellow-300 sm:flex sm:flex-row grid grid-cols-2 gap-x-0 sm:gap-x-6 gap-y-1 text-lg">
               <li className="flex items-center whitespace-nowrap">
                 <Check className="inline-block h-5 w-5 mr-2 shrink-0" />
                 <span className="hidden sm:inline">Certified contractor</span>
                 <span className="inline sm:hidden">Certif. contractor</span>
               </li>
-              <li className="flex items-center transform translate-x-6">
+              <li className="flex items-center sm:transform sm:translate-x-0 transform translate-x-6">
                 <Check className="inline-block  h-5 w-5 mr-2" />
                 WSIB
               </li>
-              <li className="flex items-center">
-                <Check className="inline-block h-5 w-5 mr-2" />
+              <li className="flex items-center whitespace-nowrap">
+                <Check className="inline-block h-5 w-5 mr-2 " />
                 Est. in 2009
               </li>
-              <li className="flex items-center sm:transform sm:-translate-x-0 sm:transform sm:-translate-x-10">
+              <li className="flex items-center whitespace-nowrap">
                 <Check className="inline-block h-5 w-5 mr-2" />
                 Fully insured
               </li>
@@ -86,51 +86,57 @@ export default function Home() {
       </section>
 
       {/* Logos Section */}
-      <section className="bg-gray-50 py-16 flex flex-row items-center justify-center">
-        <div className="grid grid-cols-2 sm:pr-5 sm:pl-3 pr-9 pl-3 gap-8 sm:flex sm:flex-wrap sm:gap-14 sm:justify-center sm:items-center">
+      <section className="bg-gray-50 py-10 sm:py-5 flex items-center justify-center">
+        <div className="grid grid-cols-4 gap-3 sm:flex sm:flex-nowrap sm:gap-14 sm:justify-center sm:items-center justify-center items-center pr-6 pl-2 w-full max-w-4xl">
           <a
             href="https://www.one-roofing.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-opacity duration-200 hover:opacity-70"
+            className="transition-opacity duration-200 hover:opacity-70 flex justify-center"
           >
-            <Image src={Logo1} alt="Logo 1" width={180} height={90} className="h-20 w-auto object-contain mx-auto" />
+            <Image src={Logo1} alt="Logo 1" width={240} height={120} className="h-14 w-auto object-contain mx-auto sm:h-28" />
           </a>
           <a
             href="https://www.soprema.ca/en/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-opacity duration-200 hover:opacity-70"
+            className="transition-opacity duration-200 hover:opacity-70 flex justify-center"
           >
-            <Image src={Logo2} alt="Logo 2" width={180} height={90} className="h-20 w-auto object-contain mx-auto" />
+            <Image src={Logo2} alt="Logo 2" width={240} height={120} className="h-14 w-auto object-contain mx-auto sm:h-28" />
           </a>
           <a
             href="https://iibec.org/"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-opacity duration-200 hover:opacity-70"
+            className="transition-opacity duration-200 hover:opacity-70 flex justify-center"
           >
-            <Image src={Logo3} alt="Logo 3" width={260} height={260} className="h-36 w-28 object-contain mx-auto" />
+            <Image src={Logo3} alt="Logo 3" width={320} height={320} className="h-20 w-20 object-contain mx-auto sm:h-44 sm:w-36" />
           </a>
           <a
             href="https://www.wsib.ca/en"
             target="_blank"
             rel="noopener noreferrer"
-            className="transition-opacity duration-200 hover:opacity-70 sm:transform sm:translate-y-0 transform translate-y-8"
+            className="transition-opacity duration-200 hover:opacity-70 flex justify-center sm:translate-y-0"
           >
-            <Image src={Logo4} alt="Logo 4" width={180} height={90} className="h-20 w-auto object-contain mx-auto" />
+            <Image src={Logo4} alt="Logo 4" width={240} height={120} className="h-14 w-auto object-contain mx-auto sm:h-28" />
           </a>
         </div>
       </section>
 
       {/* Services Section */}
       <section className="py-16">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 flex flex-col items-center justify-center">
           <div className="mb-9 text-center">
             <h2 className="mb-4 text-3xl font-bold text-gray-800">Our Services</h2>
             <p className="mx-auto max-w-2xl text-gray-600">
-              We provide comprehensive commercial roofing solutions to meet your business needs.
+              Whether you're installing a new system, restoring an existing one, or maintaining your current roof, we provide expert guidance and high-quality workmanship every <br></br> step of the way.
             </p>
+            <ul className="mx-auto font-semibold mt-6 max-w-3xl grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 text-left list-disc list-inside text-gray-700 text-base sm:transform sm:translate-x-10 transform translate-x-6">
+              <li>Built-Up Roofing (BUR)</li>
+              <li>Modified Bitumen</li>
+              <li>Single Ply Systems (TPO, PVC, & EPDM)</li>
+              <li>Liquid-Applied Membranes</li>
+            </ul>
           </div>
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
