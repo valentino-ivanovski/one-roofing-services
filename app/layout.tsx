@@ -42,7 +42,12 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
   icons: {
     icon: "/svgs/icon.ico?v2",
-    apple: "/svgs/icon.png?v2",
+    apple: [
+      {
+        url: "/svgs/icon.png?v2",
+        sizes: "180x180",
+      },
+    ],
   },
 };
 
