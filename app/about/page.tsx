@@ -7,7 +7,7 @@ import { FaLinkedin ,FaInstagram } from "react-icons/fa"
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="mb-12 text-center">
+      <div className="mb-10 bg-white ring-1 ring-gray-300 w-full mx-auto rounded-lg px-6 pb-10 pt-10 text-center">
         <h1 className="mb-4 text-4xl font-bold text-gray-800">Efficient & watertight</h1>
         <p className="mx-auto max-w-2xl text-gray-600">
           As an independent roofing contractor, we specialize in supporting building owners and property managers with reliable solutions for commercial, industrial, and residential roofing systems.
@@ -26,11 +26,8 @@ export default function About() {
       </div>
 
       {/* Company Overview */}
-      <div className="mb-16 grid gap-10 md:grid-cols-2">
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
-          <Image src="./aboutPics/1.webp?v4" alt="Our roofing team" fill className="object-cover" />
-        </div>
-        <div className="flex flex-col justify-center">
+      <div className="w-full flex ring-1 ring-gray-100 items-center justify-center flex-col mx-auto rounded-lg mb-10 bg-gray-50">
+        <div className="flex flex-col justify-center items-center text-center px-6 pb-10 pt-8">
           <h2 className="mb-4 text-3xl font-bold text-gray-800">About Us</h2>
           <p className="mb-4 text-gray-600">
             Established in 2009, One Roofing Services Inc. has proudly served the GTA's industrial,
@@ -65,112 +62,31 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      {/* Our Approach */}
-      <div className="mb-16">
-        <h2 className="mb-8 text-center text-3xl font-bold text-gray-800">Our Approach</h2>
-        <div className="grid gap-8 md:grid-cols-3">
-          <div className="rounded-lg bg-white p-6 shadow-sm">
-            <h3 className="mb-3 text-xl font-semibold text-gray-800">Consultation</h3>
-            <p className="text-gray-600">
-              We begin with a thorough consultation to understand your specific roofing needs and challenges. This
-              allows us to develop a tailored solution that addresses your unique requirements.
-            </p>
-          </div>
-
-          <div className="rounded-lg bg-white p-6 shadow-sm">
-            <h3 className="mb-3 text-xl font-semibold text-gray-800">Planning</h3>
-            <p className="text-gray-600">
-              Our team develops a comprehensive plan that outlines the scope of work, timeline, and budget. We ensure
-              all details are addressed before beginning any project.
-            </p>
-          </div>
-
-          <div className="rounded-lg bg-white p-6 shadow-sm">
-            <h3 className="mb-3 text-xl font-semibold text-gray-800">Execution</h3>
-            <p className="text-gray-600">
-              Our experienced team executes the project with precision and attention to detail. We maintain clear
-              communication throughout the process and ensure minimal disruption to your operations.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Why Choose Us */}
-      <div className="mb-16 rounded-lg bg-gray-50 p-8 md:p-12">
-        <h2 className="mb-8 text-center text-3xl font-bold text-gray-800">Why Choose Us</h2>
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="flex items-start">
-            <CheckCircle className="mr-3 h-6 w-6 shrink-0 text-primary" />
-            <div>
-              <h3 className="mb-2 text-xl font-semibold text-gray-800">Experience</h3>
-              <p className="text-gray-600">
-                With over 16 years in the industry, we have the knowledge and expertise to handle any commercial
-                roofing project.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start">
-            <CheckCircle className="mr-3 h-6 w-6 shrink-0 text-primary" />
-            <div>
-              <h3 className="mb-2 text-xl font-semibold text-gray-800">Quality Materials</h3>
-              <p className="text-gray-600">
-                We use only high-quality, durable materials from trusted manufacturers to ensure long-lasting results.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start">
-            <CheckCircle className="mr-3 h-6 w-6 shrink-0 text-primary" />
-            <div>
-              <h3 className="mb-2 text-xl font-semibold text-gray-800">Professional Team</h3>
-              <p className="text-gray-600">
-                Our team consists of trained, certified professionals who are committed to excellence in every aspect of
-                their work.
-              </p>
-            </div>
-          </div>
-
-          <div className="flex items-start">
-            <CheckCircle className="mr-3 h-6 w-6 shrink-0 text-primary" />
-            <div>
-              <h3 className="mb-2 text-xl font-semibold text-gray-800">Customer Satisfaction</h3>
-              <p className="text-gray-600">
-                We prioritize customer satisfaction and work diligently to exceed expectations on every project.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CTA Section */}
-      <div className="relative rounded-lg bg-primary text-center text-white md:p-12 p-8 overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-        src="/heroPics/1.webp"
-        alt="Roofing background"
-        fill
-        style={{ opacity: 0.3 }}
-        className="object-cover"
-        priority
-          />
-        </div>
-        <div className="relative z-10">
-          <h2 className="mb-4 text-3xl font-bold">Ready to work with us?</h2>
-          <p className="mx-auto mb-6 max-w-2xl text-lg">
-        Contact our team today to discuss your commercial roofing project.
+      <div className="relative bg-primary p-8 text-center rounded-lg overflow-hidden">
+        <Image
+          src="/heroPics/1.webp"
+          alt="Roofing background"
+          fill
+          style={{ opacity: 0.3 }}
+          className="object-cover"
+          priority
+        />
+        <div className="relative z-10 flex flex-col items-center justify-center px-4 py-16 md:p-12">
+          <h2 className="mb-4 text-3xl font-bold text-white">Ready to discuss your roofing needs?</h2>
+          <p className="mx-auto mb-6 max-w-2xl text-lg text-white">
+            Contact us today for a consultation and free estimate on your commercial roofing project.
           </p>
           <Button
-        asChild
-        size="lg"
-        variant="outline"
-        className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
+            asChild
+            size="lg"
+            variant="outline"
+            className="border-white bg-transparent text-white hover:bg-white hover:text-primary"
           >
-        <Link href="/contact">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
       </div>
     </div>
+    
   )
 }
