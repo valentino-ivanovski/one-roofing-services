@@ -7,22 +7,15 @@ import { PencilRulerIcon as Shield, Hammer as Tool, WarehouseIcon as Wrench, Rep
 export default function Services() {
   return (
     <div className="container mx-auto px-4 py-16">
-      <div className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-800">Services</h1>
-        <p className="mx-auto max-w-2xl text-gray-600 text-lg">
-          We provide comprehensive roofing solutions to meet your business needs.
-        </p>
-      </div>
-
       {/* Service Overview */}
-      <div className="mb-16 grid gap-10 md:grid-cols-2">
-        <div className="flex flex-col justify-center px-1">
-          <h2 className="mb-4 text-3xl font-bold text-gray-800">Comprehensive Roofing Solutions</h2>
+      <div className="mb-16 flex flex-col gap-10 justify-center items-center text-left sm:text-center max-w-3xl mx-auto">
+        <div className="flex flex-col justify-center items-center px-1">
+          <h2 className="mb-4 text-3xl font-bold text-gray-800">Services</h2>
           <p className="mb-6 text-gray-600">
             Whether you're installing a new system, restoring an existing one, or maintaining your current roof,
-we provide expert guidance and high-quality workmanship every step of the way.
+            we provide expert guidance and high-quality workmanship every step of the way.
           </p>
-          <ul className="mb-6 space-y-2">
+          <ul className="mb-6 flex flex-col justify-center items-left mx-auto transform translate-x-0 sm:translate-x-16 space-y-2">
             {[
               "Built-Up Roofing (BUR)",
               "Modified Bitumen",
@@ -38,14 +31,6 @@ we provide expert guidance and high-quality workmanship every step of the way.
           <Button asChild className="w-fit bg-primary hover:bg-primary/90">
             <Link href="/contact">Request a Consultation</Link>
           </Button>
-        </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
-          <Image
-            src="/servicesPics/0.webp?height=800&width=1200"
-            alt="Commercial roofing services"
-            fill
-            className="object-cover"
-          />
         </div>
       </div>
 
