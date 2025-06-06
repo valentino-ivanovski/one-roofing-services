@@ -105,7 +105,7 @@ export default function Home() {
             <Image src={Logo2} alt="Logo 2" width={240} height={120} className="h-14 w-auto object-contain mx-auto sm:h-28" />
           </a>
           <a
-            href="https://iibec.org/"
+            href="https://bcert.me/bc/html/show-badge.html?b=erkevyth"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-opacity duration-200 hover:opacity-70 flex justify-center"
@@ -305,7 +305,7 @@ export default function Home() {
                 </div>
               </div>
               <p className="text-gray-600">
-                "One Roofing Services Inc. completed our shopping center roof replacement on time and within budget.
+                "Juan and his team completed our shopping center roof replacement on time and within budget.
                 Their team was professional and minimized disruption to our tenants. Five years later, we haven't had a
                 single issue."
               </p>
@@ -337,12 +337,12 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">Sarah May</h3>
+                  <h3 className="text-lg font-semibold">Kathy D.</h3>
                   <p className="text-sm text-gray-600">Office Building Owner</p>
                 </div>
               </div>
               <p className="text-gray-600">
-                "After a severe storm damaged our office building roof, One Roofing Services Inc. responded quickly with
+                "After a severe storm damaged our office building roof, One Roofing responded quickly with
                 emergency repairs. They later completed a full restoration that has protected our building through
                 several seasons of harsh weather."
               </p>
@@ -374,14 +374,13 @@ export default function Home() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold">Robert Chen</h3>
+                  <h3 className="text-lg font-semibold">Doug D.</h3>
                   <p className="text-sm text-gray-600">Warehouse Facility Manager</p>
                 </div>
               </div>
               <p className="text-gray-600">
-                "We needed a specialized roofing solution for our 120,000 sq ft warehouse. One Roofing Services Inc.
-                provided expert guidance on material selection and completed the installation efficiently. Their
-                maintenance program has kept our roof in excellent condition."
+                "We needed a specialized roofing solution for our 120,000 sq ft warehouse. Juan from One Roofing
+                provided expert guidance on material selection and completed the installation efficiently with his team.
               </p>
               <div className="mt-4 flex text-yellow-400">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 20 20">

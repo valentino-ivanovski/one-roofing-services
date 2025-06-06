@@ -2,15 +2,27 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { CheckCircle, Award, Users, Clock } from "lucide-react"
+import { FaLinkedin ,FaInstagram } from "react-icons/fa"
 
 export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-800">About Us</h1>
+        <h1 className="mb-4 text-4xl font-bold text-gray-800">Efficient & watertight</h1>
         <p className="mx-auto max-w-2xl text-gray-600">
-          Learn about our company and our commitment to quality commercial roofing.
+          As an independent roofing contractor, we specialize in supporting building owners and property managers with reliable solutions for commercial, industrial, and residential roofing systems.
         </p>
+        <div className="flex space-x-4 mt-6 justify-center">
+            <Link href="https://www.instagram.com/oneroofingservices?igsh=MW5manBkajhlaTU1cw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-primary hover:opacity-80 transition" size={40} />
+            </Link>
+            <Link href="https://www.linkedin.com/in/juan-p-zuniga-49a17b36a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-primary hover:opacity-80 transition" size={40} />
+            </Link>
+            <Link href="https://bcert.me/bc/html/show-badge.html?b=erkevyth" target="_blank" rel="noopener noreferrer">
+              <Image src="/logos/3.png" alt="Certification Badge" width={40} height={40} className="hover:opacity-80 cursor-pointer transform -translate-y-1" />
+            </Link>
+        </div>
       </div>
 
       {/* Company Overview */}
@@ -21,14 +33,17 @@ export default function About() {
         <div className="flex flex-col justify-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-800">Our Company</h2>
           <p className="mb-4 text-gray-600">
-            One Roofing Services Inc. has been providing quality roofing services to businesses throughout the region
-            for over 15 years. We specialize in commercial roofing solutions that are durable, cost-effective, and
-            tailored to each client's specific needs.
+            Established in 2009, One Roofing Services Inc. has proudly served the GTA's industrial,
+            commercial, and residential markets for over 16 years. We specialize in delivering
+            professional, reliable roofing services tailored to the unique needs of every client. Our crews
+            are made up of experienced and certified, committed to high-quality workmanship and
+            lasting solutions.
+            One Roofing Services Inc. is a certified contractor, fully insured, and covered by WSIB,
+            ensuring peace of mind on every project.
           </p>
           <p className="mb-6 text-gray-600">
-            Our team of experienced professionals is committed to delivering exceptional service and results on every
-            project. We take pride in our attention to detail, quality workmanship, and commitment to customer
-            satisfaction.
+            One Roofing Services Inc. is a certified contractor, fully insured, and covered by WSIB,
+            ensuring peace of mind on every project.
           </p>
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="flex items-center">
@@ -90,7 +105,7 @@ export default function About() {
             <div>
               <h3 className="mb-2 text-xl font-semibold text-gray-800">Experience</h3>
               <p className="text-gray-600">
-                With over 15 years in the industry, we have the knowledge and expertise to handle any commercial
+                With over 16 years in the industry, we have the knowledge and expertise to handle any commercial
                 roofing project.
               </p>
             </div>

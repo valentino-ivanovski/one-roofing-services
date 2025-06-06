@@ -19,9 +19,9 @@ export default function Header() {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Gallery", path: "/gallery" },
+    { name: "Projects", path: "/gallery" },
     { name: "About", path: "/about" },
-    { name: "Contact", path: "/contact" },
+    { name: "Contact Us", path: "/contact" },
   ]
 
   return (
@@ -51,8 +51,15 @@ export default function Header() {
           {/* Contact Info */}
           <div className="hidden items-center space-x-4 lg:flex">
             <div className="flex items-center">
-              <Phone className="mr-2 h-4 w-4 text-primary" />
-              <span className="text-sm">(416) 841-7897</span>
+              <FaWhatsapp className="mr-2 h-4 w-4 text-green-500" />
+              <a
+              href="https://wa.me/14168417897?text=Hello! I'm interested in your roofing services."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-green-500 hover:underline"
+              >
+              (416) 841-7897
+              </a>
             </div>
             <div className="flex items-center">
               <Mail className="mr-2 h-4 w-4 text-primary" />

@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Building, Phone, Mail, MapPin } from "lucide-react"
-import { FaWhatsapp, FaFacebook, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaGithub } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -17,9 +17,9 @@ export default function Footer() {
               Professional commercial roofing services with a focus on quality and customer satisfaction.
             </p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-gray-500 hover:text-primary">
-                <FaFacebook className="h-5 w-5" />
-                <span className="sr-only">Facebook</span>
+              <Link href="https://www.instagram.com/oneroofingservices?igsh=MW5manBkajhlaTU1cw%3D%3D&utm_source=qr" className="text-gray-500 hover:text-primary" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="h-5 w-5" />
+              <span className="sr-only">Instagram</span>
               </Link>
               <Link href="https://wa.me/14168417897" className="text-gray-500 hover:text-primary" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="h-5 w-5" />

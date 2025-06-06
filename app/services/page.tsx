@@ -8,20 +8,19 @@ export default function Services() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="mb-12 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-800">Our Services</h1>
-        <p className="mx-auto max-w-2xl text-gray-600">
+        <h1 className="mb-4 text-4xl font-bold text-gray-800">Services</h1>
+        <p className="mx-auto max-w-2xl text-gray-600 text-lg">
           We provide comprehensive roofing solutions to meet your business needs.
         </p>
       </div>
 
       {/* Service Overview */}
       <div className="mb-16 grid gap-10 md:grid-cols-2">
-        <div className="flex flex-col justify-center">
+        <div className="flex flex-col justify-center px-1">
           <h2 className="mb-4 text-3xl font-bold text-gray-800">Comprehensive Commercial Roofing Solutions</h2>
           <p className="mb-6 text-gray-600">
-            Our team specializes in all aspects of commercial roofing, from routine maintenance to complete
-            replacements. We work with various roofing systems and materials to provide the best solution for your
-            specific building and budget.
+            Whether you're installing a new system, restoring an existing one, or maintaining your current roof,
+we provide expert guidance and high-quality workmanship every step of the way.
           </p>
           <ul className="mb-6 space-y-2">
             {[
@@ -66,8 +65,7 @@ export default function Services() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <p>
-                    Our thorough inspection process identifies potential issues before they become major problems. We
-                    examine all components of your roofing system to ensure everything is functioning properly.
+                    A thorough roof inspection is the first sttep in understanding the current condition of your roofing system. Our experienced professionals perform detailed evaluations to uncover existing issues and identify areas at risk for future problems. Early detection allows for timely repairs, helping you avoid costly damage and extend the life of your roof.
                   </p>
                   <h4 className="font-semibold">Our inspection includes:</h4>
                   <ul className="space-y-2">
