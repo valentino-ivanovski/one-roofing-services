@@ -22,7 +22,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-lg p-6 border">
+            <div className="absolute -bottom-6 right-0 sm:-right-6 bg-white rounded-xl shadow-lg p-6 border">
               <div className="flex items-center gap-4">
                 <div className="bg-yellow-400 rounded-full p-3">
                   <Award className="w-6 h-6 text-white" />
