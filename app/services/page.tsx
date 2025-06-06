@@ -9,25 +9,17 @@ export default function Services() {
     <div className="container mx-auto px-4 py-16">
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold text-gray-800">Services</h1>
-        <p className="mx-auto max-w-2xl text-gray-600 text-lg">
-          We provide comprehensive roofing solutions to meet your business needs.
-        </p>
-      </div>
-
-      {/* Service Overview */}
-      <div className="mb-16 grid gap-10 md:grid-cols-2">
-        <div className="flex flex-col justify-center px-1">
-          <h2 className="mb-4 text-3xl font-bold text-gray-800">Comprehensive Commercial Roofing Solutions</h2>
-          <p className="mb-6 text-gray-600">
+        <p className="mb-6 text-gray-600 max-w-xl mx-auto">
             Whether you're installing a new system, restoring an existing one, or maintaining your current roof,
-we provide expert guidance and high-quality workmanship every step of the way.
+            we provide expert guidance and high-quality workmanship every step of the way.
           </p>
-          <ul className="mb-6 space-y-2">
+          <div className="flex flex-col justify-center text-left items-center px-1">
+          <ul className="mb-6 grid grid-cols-1 transform sm:translate-x-16 translate-x-6 sm:grid-cols-2 gap-y-2 text-left">
             {[
               "Built-Up Roofing (BUR)",
               "Modified Bitumen",
-              "Single Ply Systems (TPO, PVC, and EPDM)",
               "Liquid-Applied Membranes",
+              "Single Ply Systems (TPO, PVC, and EPDM)",
             ].map((item, index) => (
               <li key={index} className="flex items-start">
                 <CheckCircle className="mr-2 h-5 w-5 shrink-0 text-primary" />
@@ -38,14 +30,6 @@ we provide expert guidance and high-quality workmanship every step of the way.
           <Button asChild className="w-fit bg-primary hover:bg-primary/90">
             <Link href="/contact">Request a Consultation</Link>
           </Button>
-        </div>
-        <div className="relative h-[400px] overflow-hidden rounded-lg">
-          <Image
-            src="/servicesPics/0.webp?height=800&width=1200"
-            alt="Commercial roofing services"
-            fill
-            className="object-cover"
-          />
         </div>
       </div>
 
