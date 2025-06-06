@@ -17,7 +17,7 @@ export default function Services() {
       {/* Service Overview */}
       <div className="mb-16 grid gap-10 md:grid-cols-2">
         <div className="flex flex-col justify-center px-1">
-          <h2 className="mb-4 text-3xl font-bold text-gray-800">Comprehensive Commercial Roofing Solutions</h2>
+          <h2 className="mb-4 text-3xl font-bold text-gray-800">Comprehensive Roofing Solutions</h2>
           <p className="mb-6 text-gray-600">
             Whether you're installing a new system, restoring an existing one, or maintaining your current roof,
 we provide expert guidance and high-quality workmanship every step of the way.
