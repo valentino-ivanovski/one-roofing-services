@@ -31,7 +31,7 @@ export default function About() {
           <Image src="./aboutPics/1.webp?v4" alt="Our roofing team" fill className="object-cover" />
         </div>
         <div className="flex flex-col justify-center">
-          <h2 className="mb-4 text-3xl font-bold text-gray-800">Our Company</h2>
+          <h2 className="mb-4 text-3xl font-bold text-gray-800">About Us</h2>
           <p className="mb-4 text-gray-600">
             Established in 2009, One Roofing Services Inc. has proudly served the GTA's industrial,
             commercial, and residential markets for over 16 years. We specialize in delivering
