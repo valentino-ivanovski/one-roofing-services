@@ -8,7 +8,7 @@ export default function About() {
   return (
     <div className="container mx-auto px-4 py-16">
       <div className="mb-10 bg-white ring-1 ring-gray-300 w-full mx-auto rounded-lg px-6 pb-10 pt-10 text-center">
-        <h1 className="mb-4 text-4xl font-bold text-gray-800">Efficient & watertight</h1>
+        <h1 className="mb-4 sm:text-4xl text-3xl font-bold text-gray-800">Efficient & watertight</h1>
         <p className="mx-auto max-w-2xl text-gray-600">
           As an independent roofing contractor, we specialize in supporting building owners and property managers with reliable solutions for commercial, industrial, and residential roofing systems.
         </p>
