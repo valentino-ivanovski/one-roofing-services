@@ -105,8 +105,15 @@ export default function Header() {
 
                 <div className="mt-8 space-y-4 border-t pt-6">
                   <div className="flex items-center">
-                    <Phone className="mr-3 h-5 w-5 text-primary" />
-                    <span>(416) 841-7897</span>
+                    <FaWhatsapp className="mr-3 h-5 w-5 text-md text-green-500" />
+                    <a
+                    href="https://wa.me/14168417897?text=Hello! I'm interested in your roofing services."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-green-500 hover:underline"
+                    >
+                    (416) 841-7897
+                    </a>
                   </div>
                   <div className="flex items-center">
                     <Mail className="mr-3 h-5 w-5 text-primary" />
