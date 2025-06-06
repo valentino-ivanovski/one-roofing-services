@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { Building, Phone, Mail, MapPin } from "lucide-react"
-import { FaWhatsapp, FaInstagram, FaGithub } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -20,6 +20,10 @@ export default function Footer() {
               <Link href="https://www.instagram.com/oneroofingservices?igsh=MW5manBkajhlaTU1cw%3D%3D&utm_source=qr" className="text-gray-500 hover:text-primary" target="_blank" rel="noopener noreferrer">
               <FaInstagram className="h-5 w-5" />
               <span className="sr-only">Instagram</span>
+              </Link>
+              <Link href="https://www.linkedin.com/in/juan-p-zuniga-49a17b36a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" className="text-gray-500 hover:text-primary" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin className="h-5 w-5" />
+                <span className="sr-only">WhatsApp</span>
               </Link>
               <Link href="https://wa.me/14168417897" className="text-gray-500 hover:text-primary" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp className="h-5 w-5" />
