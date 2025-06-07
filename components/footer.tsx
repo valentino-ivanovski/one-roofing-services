@@ -101,7 +101,7 @@ export default function Footer() {
             {/* Contact Info */}
             <div>
               <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-              <ul className="space-y-3">
+            <ul className="space-y-3 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:space-y-0">
                 <li className="flex items-start">
                   <Phone className="mr-3 h-5 w-5 shrink-0 text-primary" />
                   <span className="text-gray-600">(416) 841-7897</span>

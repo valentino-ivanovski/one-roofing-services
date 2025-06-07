@@ -15,12 +15,12 @@ export default function Services() {
             Whether you're installing a new system, restoring an existing one, or maintaining your current roof,
             we provide expert guidance and high-quality workmanship every step of the way.
           </p>
-          <ul className="mb-6 flex flex-col justify-center items-left mx-auto transform translate-x-0 sm:translate-x-16 space-y-2">
+            <ul className="space-y-3 lg:grid pb-10 lg:grid-cols-2 lg:pl-12 lg:gap-x-0 lg:space-y-0 lg:gap-y-2 lg:pb-8 lg:pt-3">
             {[
               "Built-Up Roofing (BUR)",
               "Modified Bitumen",
-              "Single Ply Systems (TPO, PVC, and EPDM)",
               "Liquid-Applied Membranes",
+              "Single Ply Systems (TPO, PVC, and EPDM)",
             ].map((item, index) => (
               <li key={index} className="flex items-start">
                 <CheckCircle className="mr-2 h-5 w-5 shrink-0 text-primary" />
