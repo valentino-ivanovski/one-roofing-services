@@ -6,7 +6,7 @@ import { FaLinkedin ,FaInstagram } from "react-icons/fa"
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4 flex items-center justify-center">
+    <div className="min-h-screen bg-white py-16 px-4 flex items-center justify-center">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center justify-center lg:flex-row-reverse">
           {/* Content Section */}
