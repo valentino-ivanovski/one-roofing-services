@@ -30,7 +30,7 @@ export default function Home() {
           <Image
             key={index}
             src={image}
-            alt="Commercial roofing"
+            alt="Roofing"
             fill
             priority
             className={`object-cover brightness-[0.85] transition-opacity duration-1000 ${

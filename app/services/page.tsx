@@ -212,7 +212,7 @@ export default function Services() {
         <div className="relative z-10 flex flex-col items-center justify-center px-4 py-16 md:p-12">
           <h2 className="mb-4 text-3xl font-bold text-white">Ready to discuss your roofing needs?</h2>
           <p className="mx-auto mb-6 max-w-2xl text-lg text-white">
-            Contact us today for a consultation and free estimate on your commercial roofing project.
+            Contact us today for a consultation and free estimate on your roofing project.
           </p>
           <Button
             asChild

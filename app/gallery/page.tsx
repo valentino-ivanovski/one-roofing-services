@@ -116,7 +116,7 @@ export default function Gallery() {
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-bold text-gray-800">Our Work</h1>
         <p className="mx-auto max-w-2xl text-gray-600">
-          Browse our portfolio of commercial roofing projects showcasing our quality workmanship.
+          Browse our portfolio of roofing projects showcasing our quality workmanship.
         </p>
       </div>
 
