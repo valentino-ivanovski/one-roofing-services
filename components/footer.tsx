@@ -5,7 +5,7 @@ import { FaWhatsapp, FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
 export default function Footer() {
   return (
     <footer className="relative border-t bg-white bg-[url('/galleryPics/26.webp')] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-white/85 z-0"></div>
+      <div className="absolute inset-0 bg-white/80 z-0"></div>
       <div className="relative z-10">
         {/* Main Footer */}
         <div className="container mx-auto px-10 py-12">
@@ -101,7 +101,7 @@ export default function Footer() {
             {/* Contact Info */}
             <div>
               <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
-            <ul className="space-y-3 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:space-y-0">
+              <ul className="space-y-3">
                 <li className="flex items-start">
                   <Phone className="mr-3 h-5 w-5 shrink-0 text-primary" />
                   <span className="text-gray-600">(416) 841-7897</span>

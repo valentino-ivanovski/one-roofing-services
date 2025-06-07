@@ -8,9 +8,9 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-4 flex items-center justify-center">
       <div className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12 items-center justify-center">
+        <div className="grid lg:grid-cols-2 gap-12 items-center justify-center lg:flex-row-reverse">
           {/* Content Section */}
-          <div className="space-y-8 pt-10 text-center lg:text-left">
+          <div className="space-y-8 text-center lg:text-left">
             <div>
               <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-4">
                 About Us
@@ -32,7 +32,7 @@ export default function About() {
             </div>
 
             {/* CTA and Social */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-0">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
               <div className="flex items-center gap-4">
                 <span className="text-gray-600 font-medium">Follow us:</span>
                 <div className="flex gap-3">
@@ -60,7 +60,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
             </div>
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-6 right-0 sm:-right-6 bg-white rounded-xl shadow-lg p-6 border">
+            <div className="absolute -bottom-6 right-8 bg-white rounded-xl shadow-lg p-6 border">
               <div className="flex items-center gap-4">
                 <div className="bg-yellow-400 rounded-full p-3">
                   <Award className="w-6 h-6 text-white" />
